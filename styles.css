@@ -126,6 +126,7 @@ h1, h2, h3 {
     border-radius: 2rem;
     box-shadow: none;
     background: #eee;
+    border: 6px solid #BEE7DF;
 }
 
 /* Services Section */
@@ -232,6 +233,7 @@ h1, h2, h3 {
     border-radius: 2rem;
     box-shadow: none;
     background: #eee;
+    border: 6px solid #BEE7DF;
 }
 
 /* Contact Section */
