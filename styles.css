@@ -97,7 +97,7 @@ h1, h2, h3 {
 .cta-button {
     display: inline-block;
     padding: 0.7rem 1.7rem;
-    background: #111;
+    background: #000B28;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -108,7 +108,7 @@ h1, h2, h3 {
 }
 
 .cta-button:hover {
-    background: #333;
+    background: #333a5c;
 }
 
 .hero-image-container {
@@ -127,6 +127,15 @@ h1, h2, h3 {
     box-shadow: none;
     background: #eee;
     border: 6px solid #BEE7DF;
+}
+
+.hero-icon {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin-left: 0.7rem;
+    object-fit: contain;
+    opacity: 0.8;
 }
 
 /* Services Section */
@@ -151,7 +160,7 @@ h1, h2, h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2.5rem;
-    width: 100%;
+    margin-bottom: 8rem;
 }
 
 .service-card {
@@ -187,6 +196,15 @@ h1, h2, h3 {
     color: #000A29;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
+}
+
+.service-icon {
+    display: block;
+    margin: 0 auto 0.7rem auto;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    opacity: 0.7;
 }
 
 /* About Section */
@@ -332,13 +350,13 @@ footer {
 }
 
 .social-links a {
-    color: #111;
+    color: #000B28;
     font-size: 1.3rem;
     transition: color 0.2s;
 }
 
 .social-links a:hover {
-    color: #333;
+    color: #333a5c;
 }
 
 .footer-section p {
@@ -399,4 +417,76 @@ footer {
     .hero-content h1 {
         font-size: 2rem;
     }
+}
+
+.resources-section {
+    background: #ececec;
+    padding: 8rem 0;
+}
+
+.resources-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.resources-text {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.resources-text h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    font-family: 'Inria Serif', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000A29;
+}
+
+.resources-text p {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #000A29;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.resources-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resources-image {
+    width: 100%;
+    height: 100%;
+    max-width: 520px;
+    aspect-ratio: 2.3/1;
+    object-fit: cover;
+    border-radius: 2rem;
+    background: #eee;
+    border: 6px solid #BEE7DF;
+}
+
+.services h2,
+.about h2,
+.resources-text h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    font-family: 'Inria Serif', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000A29;
 } 
