@@ -18,7 +18,7 @@ body {
 h1, h2, h3 {
     font-family: 'Inria Serif', serif;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
 }
 
 /* Navigation */
@@ -159,7 +159,7 @@ h1, h2, h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 10rem;
     margin-bottom: 8rem;
 }
 
@@ -196,6 +196,8 @@ h1, h2, h3 {
     color: #000A29;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
+    max-width: 320px;
+    margin: 0 auto;
 }
 
 .service-icon {
@@ -209,8 +211,8 @@ h1, h2, h3 {
 
 /* About Section */
 .about {
-    padding: 4rem 0 2rem 0;
-    background: none;
+    padding: 6rem 0;
+    background: #ececec;
 }
 
 .about h2 {
@@ -229,19 +231,17 @@ h1, h2, h3 {
     color: #000A29;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 3rem; /* NEW: Adds spacing after the paragraph */
 }
 
-.about-content .cta-button {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-}
 
 .about-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0;
+    margin-top: 2.5rem; /* UPDATED from 0 */
 }
+
 
 .about-image {
     width: 90vw;
@@ -339,7 +339,7 @@ footer {
     color: #000A29;
     font-size: 1.1rem;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
 }
 
 .social-links {
@@ -427,6 +427,12 @@ footer {
 .resources-content {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 500px;
 }
 
 .resources-grid {
@@ -448,8 +454,8 @@ footer {
     text-align: center;
     font-size: 2.2rem;
     margin-bottom: 1.2rem;
-    font-family: 'Inria Serif', serif;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-style: normal;
     color: #000A29;
 }
@@ -460,6 +466,16 @@ footer {
     color: #000A29;
     margin-bottom: 2rem;
     font-family: 'Roboto', sans-serif;
+}
+
+.resources-text ul {
+    text-align: left;
+    margin: 0 auto;
+    display: table;
+}
+
+.resources-text li {
+    text-align: left;
 }
 
 .resources-image-container {
@@ -489,4 +505,92 @@ footer {
     font-weight: 400;
     font-style: normal;
     color: #000A29;
+}
+
+.resources-headline {
+    text-align: center;
+    font-style: normal;
+    font-size: 2.2rem;
+    margin-top: -2cm;
+    margin-bottom: 3rem;
+}
+
+.resources-grid .resources-text h2 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 1rem !important;
 } 
+
+/* Team Section */
+.team {
+    padding: 6rem 1rem;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-family: 'Inria Serif', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000A29;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #BEE7DF;
+    background: #eee;
+    margin-bottom: 1rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #000A29;
+    max-width: 160px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.team-member .member-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000A29;
+    font-family: 'Roboto', sans-serif;
+}
+
+.team-member .member-role {
+    font-size: 0.95rem;
+    color: #000A29;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.linkedin-icon {
+    color: #000B28;
+    font-size: 1.3rem;
+    transition: color 0.2s;
+}
+
+.linkedin-icon:hover {
+    color: #333a5c;
+}
