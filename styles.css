@@ -522,7 +522,6 @@ footer {
     font-size: 1rem !important;
 } 
 
-/* Team Section */
 .team {
     padding: 6rem 1rem;
     background-color: #f7f7f7;
@@ -593,4 +592,12 @@ footer {
 
 .linkedin-icon:hover {
     color: #333a5c;
+}
+
+.team-row-centered {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
 }
