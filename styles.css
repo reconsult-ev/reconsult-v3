@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-
-/* Reset and base styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -211,9 +209,13 @@ h1, h2, h3 {
 
 /* About Section */
 .about {
-    padding: 6rem 0;
+    padding: 4rem 0 4rem 0;
     background: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 .about h2 {
     text-align: center;
@@ -231,7 +233,7 @@ h1, h2, h3 {
     color: #000A29;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 3rem; /* NEW: Adds spacing after the paragraph */
+    padding-bottom: 3rem;
 }
 
 
@@ -239,7 +241,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5rem; /* UPDATED from 0 */
+    margin-top: 2.5rem;
 }
 
 
@@ -600,4 +602,44 @@ footer {
     gap: 3rem;
     margin-top: 3rem;
     flex-wrap: wrap;
+}
+
+.resources-card-text {
+    width: 100%;
+    height: 100%;
+    max-width: 520px;
+    aspect-ratio: 2.3/1;
+    background-color: #000A29;
+    border-radius: 2rem;
+    border: 6px solid #BEE7DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+}
+
+.card-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+}
+
+.card-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.05rem;
+    opacity: 0.9;
+    color: #ffffff;
 }
