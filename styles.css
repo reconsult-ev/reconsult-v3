@@ -373,10 +373,6 @@ h1, h2, h3 {
     width: 90vw;
     margin: 0 auto;
     padding: 2rem;
-    background: #ffffff;
-    border-radius: 2rem;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    border: 6px solid #BEE7DF;
 }
 
 /* Footer */
