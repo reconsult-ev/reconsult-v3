@@ -263,13 +263,12 @@ h1, h2, h3 {
 
 /* About Section */
 .about {
-    padding: 4rem 0 4rem 0;
-    background: #ececec;
+    margin-top: 5rem;
+    padding: 0 0 1.5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 
 .about h2 {
     text-align: center;
@@ -290,14 +289,12 @@ h1, h2, h3 {
     padding-bottom: 3rem;
 }
 
-
 .about-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2.5rem;
 }
-
 
 .about-image {
     width: 90vw;
@@ -312,7 +309,7 @@ h1, h2, h3 {
 
 /* Contact Section */
 .contact {
-    padding: 4rem 0 2rem 0;
+    padding: 1.5rem 0 2rem 0;
     background: none;
 }
 
@@ -565,7 +562,7 @@ footer {
 
 .resources-section {
     background: #ececec;
-    padding: 8rem 0;
+    padding: 8rem 0 3rem 0;
 }
 
 .resources-content {
@@ -761,7 +758,6 @@ footer {
     padding: 3rem 2rem;
     color: #fff;
 }
-
 
 .card-text-content {
     display: flex;
