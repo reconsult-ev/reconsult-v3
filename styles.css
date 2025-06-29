@@ -851,3 +851,72 @@ footer {
   margin-bottom: 1.5rem; /* Adjust value to your preference */
   line-height: 1.6;
 }
+
+/* Data privacy page */
+.datenschutz {
+    margin-top: 5rem;
+    padding: 0 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0rem;
+}
+
+.datenschutz h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #000A29;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.datenschutz-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000A29;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.datenschutz p,
+.datenschutz ul,
+.datenschutz li {
+  margin-bottom: 1.5rem; /* Adjust value to your preference */
+  line-height: 1.6;
+}
+
+.dataprivacy {
+    margin-top: 2rem;
+    padding: 0 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dataprivacy h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #000A29;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dataprivacy-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000A29;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 3rem;
+}
+
+.dataprivacy p,
+.dataprivacy ul,
+.dataprivacy li {
+  margin-bottom: 1.5rem; /* Adjust value to your preference */
+  line-height: 1.6;
+}
