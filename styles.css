@@ -790,7 +790,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
 }
 
 .impressum h2 {
