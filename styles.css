@@ -819,7 +819,7 @@ footer {
 }
 
 .imprint {
-    margin-top: 5rem;
+    margin-top: 0rem;
     padding: 0 0 1.5rem 0;
     display: flex;
     flex-direction: column;
