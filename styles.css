@@ -923,7 +923,7 @@ footer {
 
 /* Privacy banner */
 
-.privacy-banner {
+.privacy-banner-wrapper {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -932,18 +932,36 @@ footer {
   color: #ffffff;
   font-size: 0.85rem;
   font-family: 'Roboto', sans-serif;
-  text-align: center;
-  padding: 0.8rem 1rem;
   z-index: 999;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1rem;
+}
+
+.privacy-banner {
+  text-align: center;
+  flex: 1;
 }
 
 .privacy-banner a {
   color: #BEE7DF;
   text-decoration: underline;
-  margin-left: 0.2rem;
 }
 
 .privacy-banner a:hover {
   color: #ffffff;
+}
+
+.dismiss-button {
+  cursor: pointer;
+  color: #fff;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+  user-select: none;
+}
+
+.dismiss-checkbox:checked + .privacy-banner-wrapper {
+  display: none;
 }
