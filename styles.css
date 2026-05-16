@@ -684,13 +684,13 @@ footer {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 3rem;
 }
 
 .team-row {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 5rem;
     margin-bottom: 2rem;
     flex-wrap: wrap;
 }
@@ -702,8 +702,8 @@ footer {
 }
 
 .team-member img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     border: 6px solid #BEE7DF;
