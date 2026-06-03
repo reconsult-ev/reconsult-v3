@@ -132,20 +132,55 @@
         </div>
     </section> 
     
-    <section id="contact" class="contact">
-        <div class="contact-form-iframe">
-            <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSfn561uK6VcaRxZ7XpueTMqjQsD_eU4WRbrzHpctoyW674Cmg/viewform?embedded=true" 
-                width="100%" 
-                height="800" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0">
-                loading="lazy"
-                title="Contact Form" 
-            </iframe>
+<section id="contact" class="contact">
+    <div class="contact-form-iframe">
+
+        <div data-fs-success style="padding:1.25rem 1.5rem; background:#eaf6ed; color:#1e6636; border:1px solid #b6dfc3; border-radius:8px; font-size:0.95rem;">
+            <strong>Message sent!</strong> Thank you for reaching out — we'll get back to you as soon as possible.
         </div>
-    </section>
+
+        <div data-fs-error style="display:none; padding:0.75rem 1rem; background:#fef1f1; color:#8b1a1a; border:1px solid #f4b8b8; border-radius:6px; font-size:0.88rem; margin-bottom:0.25rem;"></div>
+
+        <form id="contact-form">
+
+            <input type="text" id="name" name="name" placeholder="Full name" data-fs-field required />
+            <span data-fs-error="name"></span>
+
+            <input type="email" id="email" name="email" placeholder="Email address" data-fs-field required />
+            <span data-fs-error="email"></span>
+
+            <input type="text" id="company" name="company" placeholder="Company / Organisation (optional)" data-fs-field />
+
+            <select id="subject" name="subject" data-fs-field required>
+                <option value="" disabled selected>Select a topic…</option>
+                <option value="project-inquiry">Project inquiry</option>
+                <option value="partnership">Partnership / collaboration</option>
+                <option value="sponsorship">Sponsorship</option>
+                <option value="general">General question</option>
+                <option value="other">Other</option>
+            </select>
+            <span data-fs-error="subject"></span>
+
+            <textarea id="message" name="message" placeholder="Tell us briefly what you have in mind…" data-fs-field required></textarea>
+            <span data-fs-error="message"></span>
+
+            <input type="text" name="_gotcha" style="display:none" />
+
+            <button type="submit" data-fs-submit-btn>Send message</button>
+
+        </form>
+
+    </div>
+
+    <script>
+        window.formspree = window.formspree || function () {
+            (formspree.q = formspree.q || []).push(arguments);
+        };
+        formspree('initForm', { formElement: '#contact-form', formId: 'mqeoznvq' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
+</section>
 
     <footer>
         <div class="footer-bar">

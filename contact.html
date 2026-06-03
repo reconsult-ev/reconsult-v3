@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Reconsulte e.V.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-wrapper {
+      max-width: 640px;
+      margin: 5rem auto 6rem;
+      padding: 0 1.5rem;
+    }
+
+    .contact-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+    }
+
+    .contact-header p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* ── Success banner ── */
+    [data-fs-success] {
+      display: none;
+      padding: 1.25rem 1.5rem;
+      background: #eaf6ed;
+      color: #1e6636;
+      border: 1px solid #b6dfc3;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* ── Form-level error banner ── */
+    [data-fs-error]:not([data-fs-error=""]):not([data-fs-error^=" "]) {
+      display: block;
+    }
+
+    .form-error-banner {
+      display: none;
+      padding: 0.75rem 1rem;
+      background: #fef1f1;
+      color: #8b1a1a;
+      border: 1px solid #f4b8b8;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      margin-bottom: 0.25rem;
+    }
+
+    /* ── Form layout ── */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    @media (max-width: 540px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #333;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 0.65rem 0.9rem;
+      border: 1.5px solid #d0d0d0;
+      border-radius: 6px;
+      font-size: 0.97rem;
+      font-family: inherit;
+      color: #1a1a1a;
+      background: #fff;
+      transition: border-color 0.15s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #1a1a1a;
+    }
+
+    /* Formspree marks invalid fields with aria-invalid="true" */
+    .form-group input[aria-invalid="true"],
+    .form-group select[aria-invalid="true"],
+    .form-group textarea[aria-invalid="true"] {
+      border-color: #c0392b;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      padding-right: 2rem;
+      cursor: pointer;
+    }
+
+    /* Field-level error text */
+    .field-error {
+      font-size: 0.8rem;
+      color: #c0392b;
+      min-height: 1rem;
+    }
+
+    /* ── Privacy note ── */
+    .privacy-note {
+      font-size: 0.8rem;
+      color: #888;
+      line-height: 1.5;
+      border-left: 3px solid #e0e0e0;
+      padding-left: 0.75rem;
+    }
+
+    .privacy-note a { color: #555; }
+
+    /* ── Submit button ── */
+    .submit-btn {
+      align-self: flex-start;
+      padding: 0.75rem 2rem;
+      background: #1a1a1a;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      letter-spacing: 0.02em;
+      transition: background 0.15s, transform 0.1s, opacity 0.15s;
+    }
+
+    .submit-btn:hover:not(:disabled) { background: #333; }
+    .submit-btn:active:not(:disabled) { transform: scale(0.98); }
+    .submit-btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reuse your existing <nav> here -->
+
+  <main class="contact-wrapper">
+
+    <div class="contact-header">
+      <h1>Get in touch</h1>
+      <p>
+        Interested in working with us or learning more about Reconsulte?
+        Fill out the form and we'll get back to you shortly.
+      </p>
+    </div>
+
+    <!-- Success message — shown by Formspree after successful submit -->
+    <div data-fs-success>
+      <strong>Message sent!</strong> Thank you for reaching out —
+      we'll get back to you as soon as possible.
+    </div>
+
+    <!-- Form-level error (e.g. network issue, spam detected) -->
+    <div data-fs-error class="form-error-banner"></div>
+
+    <form id="contact-form" class="contact-form">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Max Mustermann"
+            data-fs-field
+            required
+          />
+          <span class="field-error" data-fs-error="name"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="max@example.com"
+            data-fs-field
+            required
+          />
+          <span class="field-error" data-fs-error="email"></span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="company">Company / Organisation</label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          placeholder="Your company name (optional)"
+          data-fs-field
+        />
+        <span class="field-error" data-fs-error="company"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Topic</label>
+        <select id="subject" name="subject" data-fs-field required>
+          <option value="" disabled selected>Select a topic…</option>
+          <option value="project-inquiry">Project inquiry</option>
+          <option value="partnership">Partnership / collaboration</option>
+          <option value="sponsorship">Sponsorship</option>
+          <option value="general">General question</option>
+          <option value="other">Other</option>
+        </select>
+        <span class="field-error" data-fs-error="subject"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Tell us briefly what you have in mind…"
+          data-fs-field
+          required
+        ></textarea>
+        <span class="field-error" data-fs-error="message"></span>
+      </div>
+
+      <!-- Honeypot — invisible to humans, catches bots -->
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <p class="privacy-note">
+        Your data will only be used to respond to your inquiry and will not be
+        shared with third parties. For more information, see our
+        <a href="/datenschutz.html">privacy policy</a>.
+      </p>
+
+      <button type="submit" class="submit-btn" data-fs-submit-btn>
+        Send message
+      </button>
+
+    </form>
+
+  </main>
+
+  <!-- Reuse your existing <footer> here -->
+
+  <!-- Formspree Ajax SDK — handles submission, errors, success state -->
+  <script>
+    window.formspree = window.formspree || function () {
+      (formspree.q = formspree.q || []).push(arguments);
+    };
+    formspree('initForm', {
+      formElement: '#contact-form',
+      formId: 'mqeoznvq'
+    });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
+</body>
+</html>
