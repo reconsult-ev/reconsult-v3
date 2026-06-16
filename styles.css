@@ -1092,3 +1092,24 @@ footer {
     cursor: not-allowed;
 }
 
+.about-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text h2 {
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-top: 0;
+    line-height: 1.8;
+}
+
+.about-divider {
+    width: 60px;
+    height: 2px;
+    background-color: #BEE7DF;
+    margin: 2.5rem auto;
+}
