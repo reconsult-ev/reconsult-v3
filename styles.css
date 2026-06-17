@@ -1126,11 +1126,14 @@ footer {
 .team-section-header {
   text-align: center;
   margin-bottom: 2rem;
+  width: 100%;        /* add this */
 }
 
 .team-section-header h2 {
   margin-bottom: 0.75rem;
   font-size: 1.75rem;      /* slightly bigger */
+  text-align: center; /* add this */
+  width: 100%;        /* add this */
 }
 
 .team-section-desc {
@@ -1140,7 +1143,6 @@ footer {
   line-height: 1.7;
   max-width: 520px;        /* this is what forces 2-3 lines */
 }
-
 
 .team-photo {
   width: 180px;
