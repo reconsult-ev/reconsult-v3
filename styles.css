@@ -1113,15 +1113,14 @@ footer {
     background-color: #BEE7DF;
     margin: 2.5rem auto;
 }
+
 .team-section-block {
   margin-top: 4rem;
   padding-top: 2.5rem;
   border-top: 1px solid #e0e0e0;
-}
-
-.team-section-block:first-of-type {
-  border-top: none;
-  margin-top: 0;
+  max-width: 900px;        /* add this */
+  margin-left: auto;       /* add this */
+  margin-right: auto;      /* add this */
 }
 
 .team-section-header {
@@ -1130,14 +1129,23 @@ footer {
 }
 
 .team-section-header h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;      /* slightly bigger */
 }
 
 .team-section-desc {
   font-family: 'Roboto', sans-serif;
   color: #555;
-  font-size: 1rem;
-  line-height: 1.6;
-  max-width: 560px;
-  margin: 0 auto;
+  font-size: 1.05rem;      /* bumped up */
+  line-height: 1.7;
+  max-width: 520px;        /* this is what forces 2-3 lines */
 }
+
+.team-photo {
+  width: 180px;
+  height: 180px;
+  max-width: 180px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
