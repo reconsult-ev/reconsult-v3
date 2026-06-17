@@ -1139,7 +1139,7 @@ footer {
 .team-section-desc {
   font-family: 'Roboto', sans-serif;
   color: #555;
-  font-size: 1.5rem;      /* bumped up */
+  font-size: 1.2rem;      /* bumped up */
   line-height: 1.7;
   max-width: 520px;        /* this is what forces 2-3 lines */
   margin: 0 auto; /* center and add spacing */
