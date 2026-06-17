@@ -1142,6 +1142,8 @@ footer {
   font-size: 1.5rem;      /* bumped up */
   line-height: 1.7;
   max-width: 520px;        /* this is what forces 2-3 lines */
+  margin: 0 auto; /* center and add spacing */
+  text-align: center; /* add this */
 }
 
 .team-photo {
