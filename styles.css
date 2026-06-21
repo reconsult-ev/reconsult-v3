@@ -974,122 +974,78 @@ footer {
 .dismiss-checkbox:checked + .privacy-banner-wrapper {
   display: none;
 }
-
-/* ── Contact Form (Formspree) ── */
-
-.contact-form-iframe {
+.contact-info {
     max-width: 600px;
-    width: 90vw;
     margin: 0 auto;
-    padding: 0 1rem 3rem 1rem;
+    text-align: center;
 }
 
-#contact-form {
+.contact-intro {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.contact-people {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-person {
     display: flex;
     flex-direction: column;
+    gap: 0.3rem;
+}
+
+.contact-name {
+    font-family: 'Inria Serif', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000A29;
+}
+
+.contact-role {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.contact-email-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
-#contact-form input,
-#contact-form select,
-#contact-form textarea {
-    padding: 0.75rem 1rem;
-    border: 1.5px solid #d0d0d0;
-    border-radius: 6px;
+.contact-email-label {
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
     color: #000A29;
-    background: #fff;
-    transition: border-color 0.2s;
-    outline: none;
-    width: 100%;
-}
-
-#contact-form input:focus,
-#contact-form select:focus,
-#contact-form textarea:focus {
-    border-color: #000A29;
-}
-
-#contact-form input[aria-invalid="true"],
-#contact-form select[aria-invalid="true"],
-#contact-form textarea[aria-invalid="true"] {
-    border-color: #c0392b;
-}
-
-#contact-form textarea {
-    height: 130px;
-    resize: vertical;
-}
-
-#contact-form select {
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23000A29' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 0.75rem center;
-    background-color: #fff;
-    padding-right: 2rem;
-    cursor: pointer;
-}
-
-/* Field-level error text */
-#contact-form span[data-fs-error] {
-    font-size: 0.8rem;
-    color: #c0392b;
-    font-family: 'Roboto', sans-serif;
-    min-height: 1rem;
-    display: block;
-}
-
-/* Success banner */
-[data-fs-success] {
-    display: none;
-    padding: 1.25rem 1.5rem;
-    background: #e6f4f1;
-    color: #000A29;
-    border: 1.5px solid #BEE7DF;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-}
-
-/* Form-level error banner */
-.form-error-banner {
-    display: none;
-    padding: 0.75rem 1rem;
-    background: #fef1f1;
-    color: #8b1a1a;
-    border: 1px solid #f4b8b8;
-    border-radius: 6px;
-    font-size: 0.88rem;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 0.5rem;
-}
-
-/* Submit button — matches .cta-button style */
-#contact-form button[type="submit"] {
-    padding: 0.7rem 1.7rem;
-    background: #000B28;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
     font-weight: 500;
+}
+
+.btn-contact-email {
+    display: inline-block;
+    background-color: #000A29;
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    transition: background 0.2s, opacity 0.15s;
-    align-self: flex-start;
+    font-size: 0.95rem;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
 }
 
-#contact-form button[type="submit"]:hover:not(:disabled) {
-    background: #333a5c;
-}
-
-#contact-form button[type="submit"]:disabled {
-    opacity: 0.55;
-    cursor: not-allowed;
+.btn-contact-email:hover {
+    background-color: #BEE7DF;
+    color: #000A29;
 }
 
 .about-text {
