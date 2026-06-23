@@ -576,12 +576,26 @@ footer {
     min-height: 500px;
 }
 
-.resources-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+..resources-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.resources-pair {
+    display: flex;
+    flex-direction: row;
     gap: 3rem;
     align-items: center;
+}
+
+.resources-pair--reverse {
+    flex-direction: row-reverse;
+}
+
+.resources-pair .resources-card-text,
+.resources-pair .resources-text {
+    flex: 1;
 }
 
 .resources-text {
@@ -1204,4 +1218,9 @@ footer {
     font-size: 1.6rem;
     margin-top: 0;
   }
+
+  .resources-pair,
+.resources-pair--reverse {
+    flex-direction: column;
+}
 }
