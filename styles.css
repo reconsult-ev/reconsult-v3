@@ -1176,4 +1176,32 @@ footer {
     gap: 1rem;
     flex-wrap: wrap;
   }
+
+  /* Force each pair to show: card first, text second */
+  .resources-grid .resources-image-container {
+    order: 1;
+  }
+
+  .resources-grid .resources-text {
+    order: 2;
+  }
+
+  .resources-card-text {
+    max-width: 100%;
+    padding: 2rem 1rem;
+    order: 1;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .resources-section {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+
+  .resources-headline {
+    font-size: 1.6rem;
+    margin-top: 0;
+  }
 }
