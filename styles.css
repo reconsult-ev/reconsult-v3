@@ -1112,3 +1112,27 @@ footer {
   object-position: center 15%;
 }
 
+@media (max-width: 768px) {
+  .team-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-photo {
+    width: 130px;
+    height: 130px;
+    max-width: 130px;
+  }
+
+  .team-section-block {
+    padding: 1rem;
+  }
+
+  .member-name {
+    font-size: 1rem;
+  }
+
+  .member-role {
+    font-size: 0.9rem;
+  }
+}
