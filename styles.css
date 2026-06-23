@@ -1135,4 +1135,45 @@ footer {
   .member-role {
     font-size: 0.9rem;
   }
+  /* Fix the group photo */
+  #team > div img {
+    width: 90vw !important;
+    height: 300px !important;
+    object-fit: cover;
+    object-position: center 40%;
+  }
+  /* Fix services grid */
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .resources-card-text {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .resources-section {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+
+  .resources-headline {
+    font-size: 1.6rem;
+    margin-top: 0;
+  }
+
+  /* Fix navbar wrapping */
+  .navbar {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
 }
