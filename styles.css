@@ -576,7 +576,7 @@ footer {
     min-height: 500px;
 }
 
-..resources-grid {
+.resources-grid {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -1240,4 +1240,5 @@ footer {
  .resources-pair {
     gap: 2rem;
     margin-bottom: 1.5rem;
+  }
 }
